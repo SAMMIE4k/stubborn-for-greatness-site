@@ -125,7 +125,15 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+.hero__art {
+  display: flex;
+  justify-content: center;
+}
 .hero__art img {
+  max-width: 260px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
   border-radius: 4px;
   box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55);
   transform: rotate(-2.5deg);
@@ -476,7 +484,8 @@ img { max-width: 100%; display: block; }
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
-  .hero__art { max-width: 320px; margin: 0 auto; order: -1; }
+  .hero__art { max-width: 200px; margin: 0 auto; order: -1; }
+  .hero__art img { max-height: 240px; }
   .inside-grid { grid-template-columns: 1fr; }
   .wrap--author { grid-template-columns: 1fr; text-align: left; }
   .monogram { margin-bottom: 0.5rem; }
